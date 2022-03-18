@@ -4,6 +4,7 @@ import localeLogin from '@/views/login/locale/zh-CN';
 import localeWorkplace from '@/views/dashboard/workplace/locale/zh-CN';
 
 import localeMonitor from '@/views/dashboard/monitor/locale/zh-CN';
+import localeSelection from '@/views/taobao/selection/locale/zh-CN';
 
 import localeSearchTable from '@/views/list/search-table/locale/zh-CN';
 import localeCardList from '@/views/list/card/locale/zh-CN';
@@ -30,6 +31,7 @@ import localeSettings from './zh-CN/settings';
 
 export default {
   'menu.dashboard': '仪表盘',
+  'menu.taobao': '淘宝',
   'menu.list': '列表页',
   'menu.result': '结果页',
   'menu.exception': '异常页',
@@ -40,6 +42,7 @@ export default {
   'navbar.docs': '文档中心',
   'navbar.action.locale': '切换为中文',
   ...localeSettings,
+  ...localeSelection,
   ...localeMessageBox,
   ...localeLogin,
   ...localeWorkplace,

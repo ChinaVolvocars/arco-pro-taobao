@@ -1,5 +1,6 @@
 export default {
   'menu.dashboard.monitor': 'Real-time Monitor',
+  'menu.dashboard.market': 'Market',
   'monitor.title.chatPanel': 'Chat Window',
   'monitor.title.quickOperation': 'Quick Operation',
   'monitor.title.studioInfo': 'Studio Information',

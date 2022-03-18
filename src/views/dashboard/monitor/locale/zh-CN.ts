@@ -1,5 +1,6 @@
 export default {
   'menu.dashboard.monitor': '实时监控',
+  'menu.dashboard.market': '市场',
   'monitor.title.chatPanel': '聊天窗口',
   'monitor.title.quickOperation': '快捷操作',
   'monitor.title.studioInfo': '直播信息',

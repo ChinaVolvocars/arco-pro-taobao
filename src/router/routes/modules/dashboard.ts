@@ -30,5 +30,15 @@ export default {
         roles: ['admin'],
       },
     },
+    {
+      path: 'market',
+      name: 'market',
+      component: () => import('@/views/dashboard/market/index.vue'),
+      meta: {
+        locale: 'menu.dashboard.market',
+        requiresAuth: true,
+        roles: ['admin'],
+      },
+    },
   ],
 };

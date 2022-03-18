@@ -4,6 +4,7 @@ import localeLogin from '@/views/login/locale/en-US';
 import localeWorkplace from '@/views/dashboard/workplace/locale/en-US';
 
 import localeMonitor from '@/views/dashboard/monitor/locale/en-US';
+import localeSelection from '@/views/taobao/selection/locale/en-US';
 
 import localeSearchTable from '@/views/list/search-table/locale/en-US';
 import localeCardList from '@/views/list/card/locale/en-US';
@@ -30,6 +31,7 @@ import localeSettings from './en-US/settings';
 
 export default {
   'menu.dashboard': 'Dashboard',
+  'menu.taobao': 'Taobao',
   'menu.list': 'List',
   'menu.result': 'Result',
   'menu.exception': 'Exception',
@@ -40,6 +42,7 @@ export default {
   'navbar.docs': 'Docs',
   'navbar.action.locale': 'Switch to English',
   ...localeSettings,
+  ...localeSelection,
   ...localeMessageBox,
   ...localeLogin,
   ...localeWorkplace,
