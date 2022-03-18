@@ -1,14 +1,30 @@
 <template>
   <div class="container">
     <Breadcrumb :items="['menu.taobao', 'menu.taobao.selection']" />
-    <div class="panel">
-      <h1 class="data1">数据1</h1>
-      <a-table :columns="columns" :data="data" />
+    <div class="data-container">
+      <div class="left-side">
+        <div class="panel">
+          <h1 class="data1">数据1</h1>
+          <a-table :columns="columns" :data="data" />
+        </div>
+      </div>
+      <div class="right-side">
+        <h1>Selection</h1>
+        <a-date-picker
+          v-model:pickerValue="pickerValue"
+          default-value="2019-06-03"
+          hide-trigger
+          style="width: 268px"
+        />
+      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+  const pickerValue = null;
+  const rangePickerValue = null;
+  console.log(pickerValue);
   const columns = [
     {
       title: 'Name',
@@ -68,7 +84,31 @@
 
 <style scoped lang="less">
   .container {
+    display: flex;
+    flex-direction: column;
     padding: 0 20px 20px 20px;
+  }
+
+  .data-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left-side {
+    flex: 1;
+    margin-right: 15px;
+    background-color: var(--color-bg-2);
+    border-radius: 4px;
+  }
+
+  .right-side {
+    width: auto;
+    margin-left: 10px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    background-color: var(--color-bg-2);
+    border-radius: 4px;
   }
 
   .panel {
@@ -76,7 +116,5 @@
     padding-bottom: 20px;
     padding-left: 32px;
     overflow: auto;
-    background-color: var(--color-bg-2);
-    border-radius: 4px;
   }
 </style>
